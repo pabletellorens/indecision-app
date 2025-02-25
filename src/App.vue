@@ -1,7 +1,16 @@
 <template>
+  <IndecisionView />
+</template>
+
+<script lang="ts" setup>
+import IndecisionView from './views/IndecisionView.vue';
+</script>
+
+<!--
+<template>
   <h1>Mi primera app de Vue</h1>
 
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <h1>Hello world!</h1>
 
   <MeusNumerator :valorem="5" />
 
@@ -15,3 +24,4 @@ import MeusNumeratorScript2 from './components/meus-numerator-script/MeusNumerat
 import MeusNumerator from './components/MeusNumerator.vue';
 import MeusNumeratorScript from './components/MeusNumeratorScript.vue';
 </script>
+ -->
