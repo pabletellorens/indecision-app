@@ -3,7 +3,7 @@
     <div class="bg-blue-200 text-black p-2 max-w-xs rounded-lg">{{ nuntius }}</div>
   </div>
 
-  <div v-else class="flex justify-start">
+  <div v-else class="flex">
     <div class="bg-blue-300 text-black p-2 max-w-xs rounded-lg">
       <span class="capitalize">{{ nuntius }}</span>
       <img v-if="imago" :src="imago" alt="YesNoImage" class="w-52 h-52" />

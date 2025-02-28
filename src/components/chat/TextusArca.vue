@@ -47,7 +47,7 @@ const nuntius = ref('');
 const mitteNuntius = () => {
   if (!nuntius.value) return;
 
-  emmits('mitteNuntius', nuntius.value)
+  emmits('mitteNuntius', nuntius.value);
 
   nuntius.value = '';
 };

@@ -9,15 +9,15 @@ export const useChat = () => {
   const hicTibiResponsum = async () => {
     const resp = await fetch('https://yesno.wtf/api');
 
-    const data = await resp.json() as YesNoResponsio;
+    const data = (await resp.json()) as YesNoResponsio;
 
     return data;
   };
 
   const cumNovumMuntius = async (textus: string) => {
-    if (textus.length == 0) return;
+    if (textus.length === 0) return;
 
-    if (textus.endsWith('?')) return;
+    if (!textus.endsWith('?')) return;
 
     nuntii.value.push({
       id: new Date().getTime(),
